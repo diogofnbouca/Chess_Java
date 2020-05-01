@@ -22,7 +22,7 @@ public class Program {
 		//movimentar peças;
 		
 		
-		while(true) {
+		while(!chessMatch.getCheckMate()) {
 			try {
 				UI.clearScreen();
 				//UI.printBoard(chessMatch.getPieces());
@@ -52,9 +52,10 @@ public class Program {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			}
-		}
-		
-		
+		}	
+		UI.clearScreen();
+		UI.printMatch(chessMatch, captured);
 	}
+	
 	
 }
