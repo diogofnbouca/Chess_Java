@@ -81,7 +81,7 @@ import chess.Color;
 			}
 		}
 		else {
-			System.out.println("CHECKMATE");
+			System.out.println("CHECKMATE!");
 			System.out.println("Winner: "+chessMatch.getCurrentPlayer());
 		}
 	}
